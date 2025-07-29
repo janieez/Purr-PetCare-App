@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pay"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/purr_bark_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="PURR  BARK"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_background"
+            android:padding="24dp"
+            android:elevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card holder name"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card number"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expire date"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                 />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVC"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                 />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btn_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay Now"
+                android:backgroundTint="@color/orange"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

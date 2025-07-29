@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/purr_bark_logo"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign in"
+                android:textSize="18sp"
+
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="18sp"
+
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <!-- Sign Up Form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_background"
+            android:padding="24dp"
+            android:elevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:padding="16dp"
+                android:background="@drawable/rounded_grey_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:inputType="textPassword" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:backgroundTint="@color/orange"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
